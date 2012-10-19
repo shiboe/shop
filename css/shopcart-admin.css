@@ -1,0 +1,67 @@
+
+html body .adminContainer h2, html body .adminContainer footer { text-align:center; background-color:#E8F6FA; border-bottom:1px solid #BCD0D4; font-size:3em; font-family:georgia; font-style:italic; padding:20px; color:white; text-shadow:0 0 8px #095469; letter-spacing:4px; }
+html body .adminContainer footer { font-size:1em; padding:1px 20px; color:#21759B; text-shadow:none; font-style:normal; letter-spacing:0px; border-top:1px solid #BCD0D4; border-bottom:none; }
+html body .wrap { border:1px solid #BCD0D4; }
+
+html body .adminContainer { max-width:800px; margin:10px auto; color:#3D4547; box-shadow:0 0 12px gray; }
+
+label, input, select { display:block; width:90%; }
+.inputBox { float:left; margin:0 20px 0 0; width:260px; }
+.inputBox.small { width:150px; }
+.clear { clear:both; }
+.small label, .small input { text-align:center; }
+html body .adminContainer label { text-indent:4px; font-size:.9em; font-family:georgia; font-style:italic; margin-top:12px; }
+input { padding:4px 10px; }
+.optional label { background-color:#E8F6FA !important; border-radius:10px 10px 0 0; -moz-border-radius:10px 10px 0 0; -webkit-border-radius:10px 10px 0 0; -ms-border-radius:10px 10px 0 0; -o-border-radius:10px 10px 0 0; }
+.adminContainer input[readonly] { background-color:white; border:none; font-weight:bold; }
+
+h3 { font-size:2em; font-weight:normal; font-family:georgia; margin:40px 0 10px 40px; }
+
+.failText { color:red; text-style:italic; text-align:center; padding:4px 40px; margin:10px 80px; border:1px solid red; background-color:#FAEBE6; }
+.successText { color:#2FC439; text-style:italic; text-align:center; padding:4px 40px; margin:10px 80px; background-color:#E6FAE7; border:1px solid #2FC439; }
+
+#product_images { clear:both; }
+#product_images img { display:block; float:left; margin:20px 20px 0 0; width:100px; height:100px; }
+
+/* MANAGE */
+
+#searchOptions, #productList, #product { float:left; width:340px; margin:0 0 0 40px; }
+#product { width:100%; margin-bottom:40px; }
+.inputBox input.changed, .inputBox select.changed, .inputBox textarea.changed { background-color:#FCF3C7; border-color:gold; }
+#productList { height:132px; margin-top:30px;  margin-left:20px; }
+#product_description { width:100%; resize:none; height:240px;  }
+
+/* VIEW */
+
+#orderList { float:left; width:340px; margin:0 0 0 40px; height:158px; margin-top:4px;  margin-left:20px; }
+#orderList option.new { background-color:#E8F6FA; color:orange; }
+.newMessage { float:left; color:orange; background-color:#E8F6FA; width:320px; margin-left:20px; margin-top:30px; padding:4px 10px; }
+#order { margin-bottom:60px; }
+#order table { width:700px; margin:20px 40px; border-color:lightgrey; }
+#order table .label { background-color:#E8F6FA; width:80px; text-align:center; }
+#order table td { text-align:center; }
+#order table .thumb img { width:130px; height:150px; }
+
+
+/* SETTINGS */
+
+#settingsPage #categoriesList { margin:40px 80px; }
+#settingsPage #categoriesList .categoryListItem { transition:all .3s ease-out; -moz-transition:all .3s ease-out; -webkit-transition:all .3s ease-out; -ms-transition:all .3s ease-out; -o-transition:all .3s ease-out;  }
+div.categoryListItem { margin:15px 0; position:relative; padding:10px 20px; border:1px solid lightgrey; }
+div.categoryListItem.inactive { color:lightgrey; }
+div.categoryListItem .categoryName { width:100%; font-weight:bold; font-size:1.2em; padding-right:10px; }
+div.categoryListItem .productsIn { font-style:italic; border-radius:3px; }
+div.categoryListItem:hover .move { opacity:1; }
+div.categoryListItem .isActive { float:right; }
+div.categoryListItem .isActive label,
+div.categoryListItem .isActive input { display:inline; padding-right:4px; width:auto; color:black; }
+div.categoryListItem .button-primary { float:right; width:auto; margin:-2px 10px 0 0; }
+
+/* DRAGORDER */
+
+.dragContainer                  { cursor:move; }
+.dragContainer.sidleForward > * { position:relative; top:30px; left:10px; }
+.dragContainer.sidleBack > *    { position:relative; top:-30px; left:10px; }
+.moveIndex                      { position:absolute; top:0px; left:-30px; padding:2px 6px; background-color:white; border:1px solid gray; }
+.dragContainer.moving > *       { box-shadow:0 0 10px black; -moz-box-shadow:0 0 10px black; -webkit-box-shadow:0 0 10px black; margin:0px; }
+.dragContainer.moved            { opacity:.3; }

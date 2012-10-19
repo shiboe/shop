@@ -1,0 +1,1 @@
+<p>Have issues / comments / concerns? <br>Reach out to glorious creator <a href="mailto:sccave@gmail.com?Subject=Wordpress%20Shop%20Plugin%20-%20<?php echo $_SERVER['SERVER_NAME'] ?>">Stephen Cave</a> @ <a target="_blank" href="http://www.shiboe.com/">Shiboe.com</a></p>
